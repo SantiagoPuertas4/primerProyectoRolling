@@ -1,0 +1,73 @@
+main {
+  background-color: #fcf3db;
+  font-family: "Quicksand", sans-serif;
+}
+
+.producto-paquete-titulo {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.producto-paquete-semititulo {
+  font-size: 25px;
+  color: #d3aa81;
+  font-weight: 700;
+}
+
+.bgItinerarioCards {
+  background-color: #ffe6c0;
+}
+
+.card-paquetes {
+  background-color: #fcd8b3;
+  width: 100%;
+  border: none;
+  height: 700px;
+  transition: box-shadow 0.3s ease;
+
+  & .img-card {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  & .card-footer{
+    height: 140px;
+  }
+}
+
+.paquete-Buscador {
+  background-color: rgb(191, 187, 187);
+  color: black;
+  font-size: 16px;
+}
+
+.categoria-descripcion {
+  font-size: 16px;
+  color: black;
+  & article{
+    background-color: #ffe6c0;
+  }
+}
+
+.categoriaImgPresentacion{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.shadowPagination{
+  box-shadow: 0px 10px 20px rgba(255, 127, 80, 0.6); 
+    border-radius: 5px; 
+    padding: 0px;
+  
+}
+
+
+
+@media (width < 768px) {
+  .categorias__input {
+    width: 100px;
+  }
+}

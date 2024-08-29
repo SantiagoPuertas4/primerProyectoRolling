@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+main {
+  background-color: #fcf3db;
+  font-family: "Quicksand", sans-serif;
+  color: #eb6029;
+  & h3 {
+    font-size: 40px;
+    color: #d3aa81;
+    font-weight: 800;
+  }
+
+  @media (width <= 992px) {
+    .img-principal {
+      height: 30%;
+      object-fit: cover;
+    }
+
+    main {
+      & h3 {
+        font-size: 20px;
+      }
+
+      & .experiencia-descripcion {
+        background-color: #fcd8b3;
+      }
+    }
+
+    .carousel__title {
+      & h5 {
+        font-size: 30px !important;
+      }
+
+      & p {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
+
+#carouselPrincipal {
+  height: 800px;
+
+  & .carousel-item {
+    & .carousel-img {
+      width: 100%;
+      height: 100dvh;
+      object-fit: cover;
+    }
+
+    & .carousel-txt {
+      color: #fff;
+      height: 55%;
+
+      & h5 {
+        font-size: 55px;
+        background-color: #b3b3b3bd;
+        border-radius: 20px;
+      }
+
+      & p {
+        font-size: 20px;
+        background-color: #b3b3b3bd;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+#carouselNuestrosServicios {
+  & .card-paquetes {
+    background-color: #fcd8b3;
+    width: 100%;
+    margin: 10px;
+    border: none;
+    height: 700px;
+    transition: box-shadow 0.3s ease;
+
+    & .img-card {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    & .card-footer {
+      height: 140px;
+    }
+  }
+}
+
+.card-paquetes-sin-imagen {
+  background-color: #fcd8b3;
+
+  & img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.viajes-elegidos {
+  & article {
+    transition: box-shadow 0.3s ease;
+    background-color: #fcd8b3;
+    border: none;
+    width: 100%;
+
+    & .viajes-elegidos-contenedor-img {
+      display: flex;
+      align-items: center;
+
+      & img {
+        max-height: 230px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+#experienciaCliente {
+  & #carouselExperienciaCliente {
+    & article {
+      & .experiencia-descripcion {
+        background-color: #fcd8b3;
+        max-height: 3000px;
+
+        & h5 {
+          border-radius: 20px;
+          color: #eb6029;
+        }
+
+        & p {
+          border-radius: 20px;
+          color: #eb6029;
+        }
+      }
+
+      & .img-size {
+        max-height: 200px;
+      }
+    }
+  }
+
+  & .carousel-item {
+    transition-duration: 2s;
+  }
+}
+
+.card-paquetes:hover {
+  box-shadow: 0 0 20px rgba(255, 127, 80, 0.6);
+}
+
+.card-viajes-elegidos:hover {
+  box-shadow: 0 0 20px rgba(255, 127, 80, 0.6);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  border-width: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel__indicator {
+  filter: invert(1);
+}
+
+@media (width <= 576px) {
+  .img-principal {
+    height: 30%;
+    object-fit: cover;
+  }
+
+  main {
+    & h3 {
+      font-size: 20px;
+    }
+  }
+
+  .carousel__title {
+    & h5 {
+      font-size: 30px !important;
+    }
+
+    & p {
+      font-size: 15px !important;
+    }
+  }
+}
+
+.slider__button--width {
+  width: 5% !important;
+}
+
+@media (height > 1000px) {
+  .carousel__img--height {
+    max-height: 800px;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  background-color: #fcf3db;
+}
+
+.img404 {
+  max-width: 900px;
+}
+
+@media (height > 992px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
